@@ -1,3 +1,64 @@
+/* font integration  */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Poppins&display=swap');
+/* css variables  */
+:root {
+  --primaryCol: #66ccea;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --mainBlack: #222;
+  --mainGrey: #ececec;
+  --darkGrey: #afafaf;
+  --mainSpacing: 0.25rem;
+  --mainTransition: all 0.3s linear;
+  --lightShadow: 2px 5px 3px 0 rgba(0, 0, 0, 0.25);
+  --darkShadow: 4px 10px 6px 0 rgba(0, 0, 0, 0.5);
+}
+/* reset  */
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  line-height: 1.4;
+  font-size: 1rem;
+  color: var(--mainBlack);
+  background-color: var(--offWhite);
+}
+.waveButton {
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 1rem 1.6rem;
+  margin-top: 1.5rem;
+  color: var(--mainWhite);
+  background-color: var(--primaryCol);
+  border: 2px solid var(--mainWhite);
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+  cursor: pointer;
+}
+
+.waveButton:hover {
+  background-color: var(--mainBlack);
+}
+.messageCard {
+  margin-bottom: 4rem;
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+}
+.messageCard:hover {
+  box-shadow: var(--darkShadow);
+}
+
+.inputMessage {
+  padding: 5rem 5rem 5rem 5rem;
+  margin: 2rem 2rem 2rem 2rem;
+  font-size: larger;
+}
 .mainContainer {
   display: flex;
   justify-content: center;
@@ -30,5 +91,4 @@
   padding: 8px;
   border: 0;
   border-radius: 5px;
-  
 }
