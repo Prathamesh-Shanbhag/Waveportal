@@ -165,8 +165,9 @@ const App = () => {
         <div className='header'>👋 Hey there!</div>
 
         <div className='bio'>
-          I am Prathameesh and I am working on this amazing BlockChain App so
-          that's pretty cool right? Connect your Ethereum wallet and wave at me!
+          I am Prathamesh and I am working on this amazing BlockChain App so
+          that's pretty cool right? <br />
+          Connect your Ethereum wallet and wave at me!
         </div>
 
         <button className='waveButton' onClick={wave}>
